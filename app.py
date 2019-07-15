@@ -99,7 +99,7 @@ def hasil():
         =========================================================================
         '''
         img = io.BytesIO()
-        plt.savefig(img, format='png')
+        plt.savefig(img, format='png', transparent=True)
         img.seek(0)
         graph_url = base64.b64encode(img.getvalue()).decode()
         graph = 'data:image/png;base64,{}'.format(graph_url)
