@@ -98,13 +98,16 @@ X_train, X_test, Y_train, Y_test = train_test_split(
 
 '''
 ===============================================================================================
-Machine Learning RandomForest
+Machine Learning
 ===============================================================================================
 '''
 from sklearn.ensemble import RandomForestClassifier
 randomFor = RandomForestClassifier(n_estimators=100)
 randomFor.fit(X_train, Y_train)
 
+from sklearn.linear_model import LogisticRegression
+logRes = LogisticRegression()
+logRes.fit(X_train, Y_train)
 '''
 ===============================================================================================
 Save Model
@@ -112,27 +115,4 @@ Save Model
 '''
 import joblib
 joblib.dump(randomFor, 'MLmodel')
-
-'''
-===============================================================================================
-Plotting
-===============================================================================================
-'''
-# plt.figure(figsize=(12,6))
-# plt.subplot(1,6,1)
-# plt.bar()
-
-# plt.subplot(1,6,2)
-# plt.bar()
-
-# plt.subplot(1,6,3)
-# plt.bar()
-
-# plt.subplot(1,6,4)
-# plt.bar()
-
-# plt.subplot(1,6,5)
-# plt.bar()
-
-# plt.subplot(1,6,6)
-# plt.bar()
+joblib.dump(logRes, 'MLmodelLog')

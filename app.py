@@ -127,5 +127,5 @@ def page_not_found(error):
 	return render_template('error.html')
 
 if __name__ == "__main__":
-    model = joblib.load('MLmodel')
+    model = joblib.load('MLmodelLog')
     app.run(debug=True)
