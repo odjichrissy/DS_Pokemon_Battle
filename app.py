@@ -68,27 +68,27 @@ def hasil():
         '''
         plt.figure(figsize=(12,6))
         plt.subplot(161)
-        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['HP'], color=['red', 'blue'])
+        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['HP'], color=['blue', 'green'])
         plt.title('HP')
 
         plt.subplot(162)
-        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Attack'], color=['red', 'blue'])
+        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Attack'], color=['blue', 'green'])
         plt.title('Attack')
 
         plt.subplot(163)
-        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Defense'], color=['red', 'blue'])
+        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Defense'], color=['blue', 'green'])
         plt.title('Defense')
 
         plt.subplot(164)
-        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Sp. Atk'], color=['red', 'blue'])
+        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Sp. Atk'], color=['blue', 'green'])
         plt.title('Sp. Attack')
 
         plt.subplot(165)
-        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Sp. Def'], color=['red', 'blue'])
+        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Sp. Def'], color=['blue', 'green'])
         plt.title('Sp. Defense')
 
         plt.subplot(166)
-        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Speed'], color=['red', 'blue'])
+        plt.bar([compare.iloc[0]['Name'], compare.iloc[1]['Name']], compare['Speed'], color=['blue', 'green'])
         plt.title('Speed')
 
         plt.tight_layout()
